@@ -1,0 +1,3 @@
+(systemd-run --user --scope --unit=waypipe \
+  waypipe --socket /run/user/1000/waypipe.sock --compress zstd client \
+&) 2>/dev/null
